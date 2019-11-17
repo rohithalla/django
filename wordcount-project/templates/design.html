@@ -1,0 +1,18 @@
+<h2>Patient data</h2>
+<a href="{%url 'home'%}">Start again</a>
+<br/>
+<br/>
+{{data1}}
+  <form action="{% url 'count'%}">
+    <br/>
+  	<textarea cols ="20" rows ="1" name ="patient" ></textarea>
+    <br/>
+    <textarea cols ="10" rows ="1" name ="from" ></textarea>
+    <textarea cols ="10" rows ="1" name ="to" ></textarea>
+    <br/>
+    <br/>
+    <input type="submit" value="Count!"/>
+  </form>
+  <form action="{% url 'about'%}">
+  	<input type="submit" value="About"/>
+  </form>
